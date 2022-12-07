@@ -56,6 +56,8 @@
             display:flex;
             align-items: center;
             justify-content: space-around;
+            margin:0;
+            border:0;
 
             
         }
@@ -66,19 +68,24 @@
            flex-direction: column;
            align-items: left;
            justify-content: space-around;
-           gap: 8px;
+        
            margin-top:-40px;
-           padding-top: 0;
+           
         }
         
         .landing > *,.content > * {
             align-items: center;
             justify-content: center;
+            padding:8px;
+        }
+        h2 {
+            margin:0;
         }
 
         * {
-            margin:8px;
+            
             font-family: Arial, Helvetica, sans-serif;
+            
         }
         button {
             max-width: 200px;
@@ -103,6 +110,35 @@
             font-weight: 500;
             margin-bottom:-16px;
             font-family: Arial, Helvetica, sans-serif;
+        }
+        img {
+            height: 180px;
+            width:auto;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        ul > * {
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .info {
+            margin: 0;
+            background-image: linear-gradient(to bottom,black,#f1de9d);
+            border: 0;
+            gap:32px;
+
+        }
+        figcaption {
+            font-size: large;
+            color:rgb(28, 110, 28);
+            padding:8px;
+            margin:8px;
         }
     </style>
 </head>
@@ -130,7 +166,16 @@
 
 
     <main>
-        <section class="section-one"></section>
+        <section class="info">
+            <h2>My Logos</h2>
+            <ul class="list">
+                <li><fig><img src="./images/Artboard 3 copy 22@2x-100.jpg"><figcaption>My Round Green Logo</figcaption></fig></li>
+                <li><fig><img src="./images/Artboard 3 copy 12@2x.png"><figcaption>My Square Green Logo</figcaption></fig></li>
+                <li><fig><img src="./images/Artboard 3 copy 16@2x.png"><figcaption>My Round Gold and Green Logo</figcaption></fig></li>
+                <li><fig><img src="./images/Artboard 3 copy 17@2x.png"><figcaption>My Gold and Green Logo with Shading</figcaption></fig></li>
+            </ul>
+        </section>
+
         <section class="section-two"></section>
     </main>
     <footer></footer>
