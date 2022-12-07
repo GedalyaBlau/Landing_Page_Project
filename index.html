@@ -88,7 +88,7 @@
             
         }
         button {
-            max-width: 200px;
+            
             border-radius: 2rem;
             padding:1rem;
             background-color: black;
@@ -121,6 +121,7 @@
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
+            margin:0;
         }
         ul > * {
             align-items: center;
@@ -139,6 +140,40 @@
             color:rgb(28, 110, 28);
             padding:8px;
             margin:8px;
+        }
+        .testimonial {
+            background-image: linear-gradient(to bottom,rgb(28,110,28),#f1de9d);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        .testimonial  * {
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            flex:1;
+            padding: 16px;
+        }
+        footer {
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            flex:1;
+            background-image: linear-gradient(to bottom right,rgb(0, 184, 0),darkgreen)
+        }
+        .signup {
+            border-radius: 1rem;
+            font-size: x-large;
+            font-weight: 700;
+            padding:32px;
+            width:75%;
+        }
+        .push {
+            display:flex;
+            flex-direction: column;
+            padding:16px;
         }
     </style>
 </head>
@@ -176,9 +211,17 @@
             </ul>
         </section>
 
-        <section class="section-two"></section>
+        <section class="testimonial">
+            <article><h2>Testimonial</h2>
+            <p>A nice warm testimonial will go here... etc etc etc etc </p></article>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="push">
+        <h2>Join Us!</h2>
+        <p>So what are you waiting for? Click here to join now!</p></div>
+        <button class="signup">Sign Up Now!</button>
+    </footer>
 </body>
 
 </html>
