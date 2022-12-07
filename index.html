@@ -52,6 +52,14 @@
             margin:0;
             padding:0;
         }
+        .landing {
+            display:flex;
+            align-items: center;
+            justify-content: space-around;
+
+            
+        }
+        
         .content {
            display: flex;
            flex-wrap: wrap;
@@ -59,13 +67,15 @@
            align-items: left;
            justify-content: space-around;
            gap: 8px;
+           margin-top:-40px;
+           padding-top: 0;
         }
-        .landing {
-            display:flex;
+        
+        .landing > *,.content > * {
             align-items: center;
-            justify-content: space-around;
-            
+            justify-content: center;
         }
+
         * {
             margin:8px;
             font-family: Arial, Helvetica, sans-serif;
@@ -87,6 +97,13 @@
         header > * {
             flex:1;
         }
+        .blurb {
+            font-size: large;
+            padding:8px;
+            font-weight: 500;
+            margin-bottom:-16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
     </style>
 </head>
 
@@ -102,8 +119,8 @@
         </header>
         <div class="landing">
         <div class="content">
-            <h1>Welcome To Rivky Blau</h1>
-            <p>Rivky Blau is ....</p>
+            <h1>Welcome To Rivky Blau!</h1>
+            <p class="blurb">The Salon in Jerusalem for all your Beauty Needs!</p>
             <button>Contact Us</button>
         </div>
             <img class="pic" src="./images/pic_rivky_blau.jpg">
