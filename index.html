@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GB's Landing Page Project</title>
+    <style>
+        .logo {
+            display: flex;
+            height: 120px;
+            width: auto;
+            margin: 8px;
+
+        }
+
+        header {
+            display: flex;
+
+            align-items: center;
+            justify-content: space-around;
+
+            gap: 16px;
+            flex-wrap: wrap;
+
+        }
+
+        a {
+            margin: 8px;
+
+        }
+
+        .links {
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+            font-weight: 550;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 16px;
+
+        }
+
+        .gold-back {
+            background-image: linear-gradient(to left, #f4de94, #ab8047);
+            margin:0;
+            padding:0;
+        }
+        .content {
+           display: flex;
+           flex-wrap: wrap;
+           flex-direction: column;
+           align-items: left;
+           justify-content: space-around;
+           gap: 8px;
+        }
+        .landing {
+            display:flex;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+        * {
+            margin:8px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button {
+            max-width: 200px;
+            border-radius: 2rem;
+            padding:1rem;
+            background-color: black;
+            color:#f1de9d;
+            font-size: large;
+            margin:2rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .pic {
+            height: 250px;
+            width: auto;
+        }
+        header > * {
+            flex:1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gold-back">
+        <header>
+            <a href="./index.html"><img class="logo" src="images/fixedlogo.png" alt="logo for Rivky Blau"></a>
+            <nav class="navbar">
+                <a class="links" href="./index.html">Home</a>
+                <a class="links" href="./Contact.html">Contact Us</a>
+                <a class="links" href="./About.html">About</a>
+            </nav>
+        </header>
+        <div class="landing">
+        <div class="content">
+            <h1>Welcome To Rivky Blau</h1>
+            <p>Rivky Blau is ....</p>
+            <button>Contact Us</button>
+        </div>
+            <img class="pic" src="./images/pic_rivky_blau.jpg">
+        </div>
+
+    </div>
+
+
+    <main>
+        <section class="section-one"></section>
+        <section class="section-two"></section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
